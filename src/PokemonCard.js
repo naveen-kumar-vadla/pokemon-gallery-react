@@ -1,12 +1,12 @@
 import React from 'react';
 
 const PokemonCard = ({ pokemon }) => {
-  const statsList = pokemon.stats.map((stat, index) => (
-    <tr key={index}>
-      <th>{stat.name}</th>
-      <td>{stat.value}</td>
-    </tr>
-  ));
+  // const statsList = pokemon.stats.map((stat, index) => (
+  //   <tr key={index}>
+  //     <th>{stat.name}</th>
+  //     <td>{stat.value}</td>
+  //   </tr>
+  // ));
 
   const typesList = pokemon.types.map((type, index) => (
     <div className='type' key={index}>
@@ -26,9 +26,9 @@ const PokemonCard = ({ pokemon }) => {
         className='pokemon-image'
         alt={pokemon.name}
       ></img>
-      <table className='table'>
+      {/* <table className='table'>
         <tbody>{statsList}</tbody>
-      </table>
+      </table> */}
       <div className='types'>{typesList}</div>
     </div>
   );
