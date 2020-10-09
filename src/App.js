@@ -8,7 +8,7 @@ const App = () => (
     <div className='mainContainer'>
       <div className='searchBarContainer'></div>
       <div>
-        <PokemonGallery count='893' />
+        <PokemonGallery />
       </div>
     </div>
   </div>

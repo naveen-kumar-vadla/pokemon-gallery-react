@@ -1,10 +1,11 @@
 import React from 'react';
 
-import Pokemon from './Pokemon.js';
+import PokemonCard from './PokemonCard.js'
+import * as data from './pokemonsData.json'
 
-const PokemonGallery = ({ count }) => {
-  const pokemonIds = new Array(+count).fill().map((x, i) => i + 1);
-  const pokemons = pokemonIds.map(id => <Pokemon id={id} key={id} />);
+const PokemonGallery = (_) => {
+  const pokemondsData = data.default;
+  const pokemons = pokemondsData.map(pokemon => <PokemonCard pokemon={pokemon} key={pokemon.name} />);
   return <div className="pokemonContainer">{pokemons}</div>
 };
 
