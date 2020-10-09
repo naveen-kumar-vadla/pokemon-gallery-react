@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import PokemonGallery from './PokemonGallery.js';
+
+const App = () => (
+  <div>
+    <h1 className='main-heading'>Pokemon Gallery</h1>
+    <div className='mainContainer'>
+      <div className='searchBarContainer'></div>
+      <div>
+        <PokemonGallery count='893' />
+      </div>
     </div>
-  );
-}
+  </div>
+);
 
 export default App;

@@ -11,3 +11,184 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-color: #00d9ff26;
+  font-family: sans-serif;
+}
+
+.main-heading {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0%;
+  padding: 0%;
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  padding: 1vh;
+}
+
+input[type='search']:focus {
+  outline: none;
+}
+
+input[type='search'] {
+  height: 3.5vh;
+  width: 40vh;
+  border: none;
+  background-color: transparent;
+  border-bottom: 0.1vh solid rgba(80, 80, 80, 0.5);
+  border-radius: 0.3vh;
+  padding-left: 1vh;
+}
+
+.pokemonContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 2vw;
+}
+
+.pokemon {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1.5vh;
+  margin: 1vh;
+  background-color: #00d9ff26;
+  box-shadow: 0.5vh 0.5vh 1vh 0vh #ccc;
+  transform: scale(0.95);
+  border: 0.1vh solid black;
+  transition: transform 1s;
+}
+
+.pokemon:hover {
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.pokeCard-heading {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.1vh solid black;
+}
+
+.backName {
+  text-align: center;
+  font-weight: 500;
+}
+
+.pokemon-image {
+  height: 20vh;
+  width: 10vw;
+  margin: 2vh;
+}
+
+.table tr,
+td,
+th {
+  text-align: left;
+  font-weight: 500;
+}
+
+td {
+  text-align: right;
+}
+
+.types {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 0vh 1vh 0vh;
+}
+
+.type {
+  display: flex;
+  font-size: 1em;
+  padding: 0.5vh;
+  margin: 0vh 0.5vh 0vh 0.5vh;
+}
+
+
+.grass,
+.poison,
+.bug,
+.flying,
+.dragon,
+.electric,
+.fighting,
+.fire,
+.ghost,
+.poison,
+.psychic,
+.ground,
+.rock,
+.ice,
+.flying,
+.normal,
+.water,
+.steel,
+.dark,
+.fairy {
+  width: 1.5vh;
+  height: 1.5vh;
+  margin-top: 0.3vh;
+  border-radius: 100vh;
+  margin-right: 0.5vh;
+}
+.grass {
+  background: linear-gradient(#83ad44, #48ff00);
+}
+.poison {
+  background: linear-gradient(#a370b1, #c800ff);
+}
+.bug {
+  background: linear-gradient(brown, black);
+}
+.flying {
+  background: linear-gradient(#fbff00, #eee1e1);
+}
+.dragon {
+  background: linear-gradient(#fdff75, #fccc7c);
+}
+.electric {
+  background: linear-gradient(#fbff00, #ffc400);
+}
+.fighting {
+  background: linear-gradient(#929252, #cccc5c);
+}
+.fire {
+  background: linear-gradient(#ff6600, #fbff00);
+}
+.ghost {
+  background: linear-gradient(#444141, #4e4242);
+}
+.psychic {
+  background: linear-gradient(#4e4b4b, #8b8989);
+}
+.ground {
+  background: linear-gradient(#584632, #5c4937);
+}
+.rock {
+  background: linear-gradient(#5d5c5c, #8f8f8f);
+}
+.ice {
+  background: linear-gradient(#00ffff, #ffffff);
+}
+.water {
+  background: linear-gradient(#008cff, #00ffff);
+}
+.normal {
+  background: linear-gradient(#683c1f, #fbff00);
+}
+.steel {
+  background: linear-gradient(#ffffff, #3d3d3d);
+}
+.dark {
+  background: linear-gradient(#161616, #7c6d6d);
+}
+.fairy {
+  background: linear-gradient(#ffee00, #ffffff91);
+}
